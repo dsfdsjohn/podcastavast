@@ -15,7 +15,7 @@ sphinx:
 build:
   image: latest
   os: ubuntu-22.04
-  
-
-# Documentation root
-docs_dir: .
+  tools: python  # this is required by RTD
+  commands:
+    - pip install -r requirements.txt  # optional if not in 'install'
+    - sphinx-build -b html docs/ build/html
