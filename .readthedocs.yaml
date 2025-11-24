@@ -2,7 +2,6 @@
 version: 2
 
 python:
-  version: "3.13"
   install:
     - requirements: requirements.txt
 
