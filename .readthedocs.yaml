@@ -9,13 +9,11 @@ python:
 
 # Sphinx configuration
 sphinx:
-  configuration: conf.py
+  configuration: conf.py  # root level
 
-# Build configuration
+# Build settings
 build:
   image: latest
   os: ubuntu-22.04
-  tools: python  # this is required by RTD
-  commands:
-    - pip install -r requirements.txt  # optional if not in 'install'
-    - sphinx-build -b html docs/ build/html
+  tools:
+    python: 3.13  # dictionary format required by RTD
