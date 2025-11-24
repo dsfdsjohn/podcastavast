@@ -15,8 +15,7 @@ sphinx:
 build:
   image: latest
   os: ubuntu-22.04
-  tools:
-    sphinx: latest  # required by RTD to know how to build
+  
 
 # Documentation root
 docs_dir: .
