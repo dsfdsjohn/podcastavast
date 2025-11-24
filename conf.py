@@ -24,5 +24,13 @@ myst_enable_extensions = [
     "attrs_inline",
 ]
 
+# conf.py
+
+# Add meta tags to the HTML <head>
+html_meta = {
+    "author": "Your Name",
+}
+
+
 # Optional: show source link
 html_show_sourcelink = True
