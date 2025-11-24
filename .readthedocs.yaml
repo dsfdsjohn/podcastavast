@@ -1,9 +1,7 @@
 # .readthedocs.yaml
-
-# Build configuration
 version: 2
 
-# Build environment
+# Python environment
 python:
   version: 3.13
   install:
@@ -13,10 +11,12 @@ python:
 sphinx:
   configuration: conf.py
 
-# Documentation build settings
+# Build configuration
 build:
   image: latest
   os: ubuntu-22.04
+  tools:
+    sphinx: latest  # required by RTD to know how to build
 
-# Files/folders to include in the documentation build
+# Documentation root
 docs_dir: .
