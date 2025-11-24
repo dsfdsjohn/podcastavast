@@ -1,0 +1,22 @@
+# .readthedocs.yaml
+
+# Build configuration
+version: 2
+
+# Build environment
+python:
+  version: 3.13
+  install:
+    - requirements: requirements.txt
+
+# Sphinx configuration
+sphinx:
+  configuration: conf.py
+
+# Documentation build settings
+build:
+  image: latest
+  os: ubuntu-22.04
+
+# Files/folders to include in the documentation build
+docs_dir: .
