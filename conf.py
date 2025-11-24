@@ -12,6 +12,9 @@ extensions = [
 ]
 
 templates_path = ["_templates"]
+
+
+
 exclude_patterns = []
 
 html_theme = "sphinx_rtd_theme"
@@ -26,10 +29,8 @@ myst_enable_extensions = [
 
 # conf.py
 
-# Add meta tags to the HTML <head>
-html_meta = {
-    "author": "Your Name",
-}
+
+
 
 
 # Optional: show source link
